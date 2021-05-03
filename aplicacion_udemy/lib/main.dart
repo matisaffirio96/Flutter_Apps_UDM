@@ -1,16 +1,8 @@
+import 'package:aplicacion_udemy/src/app.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(new MyApp());
-}
+// import 'src/app.dart';
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(context) {
-    return MaterialApp(
-      home: Center(
-        child: Text('Hola Mundo'),
-      ),
-    );
-  }
+void main() {
+  runApp(MyApp());
 }
