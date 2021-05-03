@@ -7,5 +7,6 @@ class Heroe {
 //     this.nombre = nombre;
 //     this.poder = poder;
 //   }
+// nuevo comentario
 
 }
