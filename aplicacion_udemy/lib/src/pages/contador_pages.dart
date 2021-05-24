@@ -46,23 +46,41 @@ class _ContadorPageState extends State<ContadorPages> {
         ),
         FloatingActionButton(
           child: Icon(Icons.settings_backup_restore),
-          onPressed: null,
+          onPressed: _reset,
         ),
         Expanded(
           child: SizedBox(),
         ),
         FloatingActionButton(
           child: Icon(Icons.remove),
-          onPressed: null,
+          onPressed: _sustraer,
         ),
         SizedBox(
           width: 5.0,
         ),
         FloatingActionButton(
           child: Icon(Icons.add),
-          onPressed: null,
+          onPressed: _agregar,
         ),
       ],
     );
+  }
+
+  void _agregar() {
+    setState(() {
+      _conteo++;
+    });
+  }
+
+  void _sustraer() {
+    setState(() {
+      _conteo--;
+    });
+  }
+
+  void _reset() {
+    setState(() {
+      _conteo = 0;
+    });
   }
 }
